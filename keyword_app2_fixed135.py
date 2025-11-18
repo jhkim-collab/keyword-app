@@ -933,7 +933,7 @@ with tab1:
             pre_risks = st.multiselect("리스크 등급", options=db_risks, key="pre_risks")
         with cf3:
             match_mode = st.radio("매칭 조건", ["유사 키워드 포함", "정확 일치"], index=1, key="match_mode")
-            exact_relaxed = st.checkbox("느슨한-정확(괄호 제거·공백 정규화·영문 대소문자 무시)", value=True, key="exact_relaxed")
+            exact_relaxed = st.checkbox("(괄호 제거·공백 정규화·영문 대소문자 무시)", value=True, key="exact_relaxed")
     
     if st.button("텍스트 분석하기", type="primary", key="btn_analyze"):
         try:
